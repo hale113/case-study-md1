@@ -37,7 +37,7 @@ class Questions{
      }
      let question1 = new Questions("câu 1: Đâu là một ban nhạc Rock?" ,["A.Bức thư","B.Bức tượng","C.Bức tranh","D.Bức tường"],"D.Bức tường","200.000VNĐ");
      let question2 = new Questions("câu 2: Loài chim nào sau đây có thể bắt chước được tiếng người" ,["A.Chích bông","B.Quạ","C.Vẹt","D.Họa mi"],"C.Vẹt","400.000VNĐ");
-     let question3 = new Questions("câu 3: Từ nào cong thiếu trong câu ca dao sau 'Đường vô xứ...quanh quanh.Non xanh nước biếc như tranh họa đồ?" ,["A.Thanh","B.Nghệ","C.Huế","D.Đoài"],"C.Huế","600.000VNĐ");
+     let question3 = new Questions("câu 3: Từ nào cong thiếu trong câu ca dao sau 'Đường vô xứ...quanh quanh.Non xanh nước biếc như tranh họa đồ?" ,["A.Thanh","B.Nghệ","C.Hoa","D.Đoài"],"B.Nghệ","600.000VNĐ");
      let question4 = new Questions("câu 4: Đâu không phải loài động vật có sừng?" ,["A.Sư tử ","B.Tê giác ","C.Linh dương ","D.Tuần lộc "],"A.Sư tử ","1.000.000VNĐ");
      let question5 = new Questions("câu 5: Đâu là tên một loại đàn cổ ở Tây Nguyên?" ,["A.Sỏi ","B.Đá ","C.Cát ","D.Đất"],"B.Đá ","2.000.000VNĐ");
      let question6 = new Questions("câu 6: Cho đến nay từ tiếng Việt nào chưa xuất hiện trong tiếng Anh Oxford?" ,["A.Áo dài ","B.Phở ","C.Bánh mỳ ","D.Nem "],"D.Nem ","3.000.000VNĐ");
@@ -74,13 +74,13 @@ class Questions{
      function checkAnswer(id){
          let answer = document.getElementById(id).innerHTML;
          // let getQuestionId = document.getElementById('question');
-         if (!confirm("Bạn có chắc chắn ?")){
+         if (!confirm("Chốt chưa bạn ây ?")){
              return true;
          }
          if (questions[index].checkAnswer(answer)) {
-             alert('Câu trả lời chính xác!');
+             alert('Được cuả ló đấy!! Chính xác!');
              if (index === 14) {
-                 alert("Xin chúc mừng bạn đã giành chiến thắng!");
+                 alert("Đỉnh của chóp! Xin chúc mừng tiệu phú mới nổi");
                  timeCount = 1;
                  reload();
              }
@@ -90,7 +90,7 @@ class Questions{
              document.getElementById('result').innerHTML = "Tiền thưởng là:" + (questions[index].money);
              timeCount = 30;
          } else {
-             alert('Gà quá! Sai rồi bạn ê!!');
+             alert('Gà quá! Sai rồi chú ạ!! Mần lại đê kk');
              reload();
          }
      }
