@@ -13,6 +13,11 @@ class Questions{
         return answer === this.trueAnswer
     }
 }
+function music(){
+    musicBackground = new Audio("sound/start.mp3");
+}
+music();
+musicBackground.play()
      let timeCount;
      let message;
 
@@ -49,7 +54,7 @@ class Questions{
      let question12 = new Questions("câu 12: Sazae-san là bộ phim dài nhất thế giới ở thể loại nào?" ,["A.Hoạt hình","B.Trinh thám ","C.Hành động ","D.Kinh dị "],"A.Hoạt hình","40.000.000VNĐ");
      let question13 = new Questions("câu 13: Cựu phi hành gia nào là người duy nhất vừa bay vào vũ trụ vừa lặn xuống biển điểm sâu nhất đại dương thuộc rãnh địa Mariana?" ,["A.Bob Behnken ","B.Kate Rubins ","C.Kathy Sullivan ","D.Doug Hurley "],"C.Kathy Sullivan ","60.000.000VNĐ");
      let question14 = new Questions("câu 14: Ngày 10/3 âm lịch hàng năm được chính thức quy định là ngày Quốc lễ Giỗ Tổ Hùng Vương vào triều đại nào trong lịch sử nước ta?" ,["A.Nhà Lý ","B.Nhà Hậu Lê","C.Nhà Nguyễn","D. Nhà Trần "],"C.Nhà Nguyễn","85.000.000VNĐ");
-     let question15 = new Questions("câu 15: Những vần thơ 'Trường Sơn chí lón ông cha/ Cửu Long lòng mẹ bao la sóng trào' nằm trong tác phẩm nào của nhad thơ Lê Anh Xuân?" ,["A.Dáng đứng Việt Nam ","B.Nguyễn Văn Trỗi","C.Gửi miền Bắc","D.Hành quân giữa rừng xuân"],"B.Nguyễn Văn Trỗi","150.000.000VNĐ");
+     let question15 = new Questions("câu 15: Những vần thơ 'Trường Sơn chí lón ông cha/ Cửu Long lòng mẹ bao la sóng trào' nằm trong tác phẩm nào của nhà thơ Lê Anh Xuân?" ,["A.Dáng đứng Việt Nam ","B.Nguyễn Văn Trỗi","C.Gửi miền Bắc","D.Hành quân giữa rừng xuân"],"B.Nguyễn Văn Trỗi","150.000.000VNĐ");
 
      let questions = [question1 ,question2 ,question3 ,question4 ,question5 ,question6 ,question7 ,question8 ,question9 ,question10 ,question11 ,question12 ,question13 ,question14 ,question15];
      let getQuestion = document.getElementById('question');
@@ -66,6 +71,7 @@ class Questions{
          for (let i = 0; i< 4; i++){
              let getaswId = document.getElementById('answer_' + (i + 1));
              getaswId.innerHTML = question_1.answer[i];
+
          }
      }
      showQuestion(question1);

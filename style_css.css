@@ -1,5 +1,5 @@
 body{
-    background-image: url("anh.jpg");
+    background-image: url("anh3.jpg");
     background-size: cover;
 }
 
@@ -9,8 +9,14 @@ body{
     margin-left: 10px;
     border-radius: 5px;
     text-align: center;
-    color: #0b0c0b;
+    color: #eaea16;
     font-size: 30px;
+}
+#questionScreen img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
 }
 #styleTime{
     background-color: #47dc5f;
@@ -24,25 +30,25 @@ body{
 }
 
 #timeCountDown{
-    background-color: #b71c1c;
+    background-color: #e72626;
     font-size: 30px;
     width: 350px;
     border-radius: 10px;
     height: 50px;
     margin-left: 20px;
     margin-top: 20px;
-    color: white;
+    color: #eaea2b;
 }
 
 #question{
     background-color: #e72626;
     width: 80%;
-    height: 90px;
+    height: 100px;
     text-align: center;
     border-radius: 100px;
     margin: 100px auto 50px auto;
     padding: 5px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #answer{
@@ -56,13 +62,13 @@ button {
     display: inline-block;
     cursor: pointer;
     font-size: 30px;
-    background-color: white;
+    background-color: #0aa20a;
     color: black;
     border-radius: 80px;
 }
 
 button:hover {
-    background-color: #12cb19;
+    background-color: #e0e744;
     transform: translateY(-10px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
 }
