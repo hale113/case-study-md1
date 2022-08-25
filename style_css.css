@@ -1,15 +1,15 @@
 body{
-    background-image: url("anh3.jpg");
+    background-image: url("anh2.jpg");
     background-size: cover;
 }
 
 #point{
     width: 300px;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 5px;
     text-align: center;
-    color: #eaea16;
+    color: #d7d71b;
     font-size: 30px;
 }
 #questionScreen img{
@@ -41,14 +41,15 @@ body{
 }
 
 #question{
-    background-color: #e72626;
+    /*display: inline;*/
+    background: #e72626;
     width: 80%;
     height: 100px;
     text-align: center;
     border-radius: 100px;
     margin: 100px auto 50px auto;
     padding: 5px;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 #answer{
